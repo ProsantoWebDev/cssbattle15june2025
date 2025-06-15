@@ -1,0 +1,50 @@
+<div class='a h'></div>
+<div class='b v'></div>
+<div class='c'></div>
+<div class='d v'></div>
+<div class='e h'></div>
+
+<style>
+  body{
+    background: #334F9F;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .h{
+    background: #97AE41;
+    width: 320px;
+    height: 90px;
+  }
+  .v,.c{
+    width: 320px;
+    height: 40px;
+    position: relative
+  }
+  .v:after{
+    content: '';
+    width: 50px;
+    height: 40px;
+    background: #97AE41;
+    position: absolute;
+    top:0;
+    left: -50px;
+  }
+   .v:before{
+    content: '';
+    width: 50px;
+    height: 40px;
+    background: #97AE41;
+    position: absolute;
+    top:0;
+    right: -50px;
+  }
+  .c{
+    background: #97AE41;
+  }
+  
+</style>
+
+
